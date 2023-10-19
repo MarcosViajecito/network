@@ -1,0 +1,33 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+    <hr>
+    <div>
+        <div id="userprofile">@{{username}}</div>
+        <div id="followers">Followers: <span id="followersCount">{{followers}}</span></div>
+        <div id="following">Following: {{following}}</div>
+    </div>
+    {% if is_same_user == False %}
+        <div>
+            {% csrf_token %}
+            <button id="follow" class="btn-primary">
+                {% if isfollowing %}            
+                    Unfollow
+                {% else %}
+                    Follow
+                {% endif %}
+            </button>
+        </div>
+    {% endif %}
+    <div>
+        You walk past their house and hear:
+        <div id="posts">
+
+        </div>
+    </div>
+    <script src="{% static 'network/posts.js' %}"></script>
+    <script src="{% static 'network/profile.js' %}"></script>
+
+{% endblock %}

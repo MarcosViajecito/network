@@ -1,0 +1,239 @@
+/* Estilos generales */
+body {
+    background-color: #b69468;
+    margin: 0;
+    padding: 0;
+}
+
+.cafelogo {
+    height: 60px;
+    padding-bottom: 10px;
+}
+
+
+
+
+.btn {
+    background-color: #d19872;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background-color: #e9d18e;
+}
+
+.post {
+    margin-bottom: 5px;
+}
+
+.pagination {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.pagination-button:hover {
+    background-color: #7cb0bd;
+    cursor: pointer; 
+}
+
+.usertag {
+    cursor: pointer;
+}
+
+.profile {
+    margin: 15px;
+}
+
+
+.webTitle {
+    font-size: 3.8rem;
+    padding-top: 5px;
+}
+
+.logo {
+    max-width: 10%;
+    height: auto;
+    float: right;
+    margin-right: -10px;
+    margin-top: -5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigator {
+    flex: 2;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+@media (max-width: 850px) {
+
+    .navigator {
+        font-size: 1.2rem;
+    }
+    
+    .pagination {
+        margin-top: 0.5rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .navigator {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 670px) {
+    .webTitle {
+        font-size: 1.5rem;
+    }
+
+    .navigator {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navigator {
+        font-size: 0.9rem;
+    }
+    .webTitle {
+        font-size: 1.1rem;
+    }
+    .cafelogo {
+        height: 35px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .navigator {
+        font-size: 0.8rem;
+    }
+    .webTitle {
+        font-size: 1rem;
+    }
+    .cafelogo {
+        height: 25px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .navigator {
+        font-size: 0.6rem;
+    }
+    .webTitle {
+        font-size: 0.9rem;
+    }
+    .cafelogo {
+        height: 23px;
+        padding-bottom: 5px;
+    }
+}
+
+#usernameNav{
+    cursor: pointer;
+}
+
+#pagetitle {
+    cursor: pointer;
+}
+
+.cafe {
+    display: block;
+    background-image: url("cafe.svg");
+    background-size: cover;
+    height: 33px;
+    width: 33px;
+    margin-top: -8px;
+        margin-left: 7px;
+}
+
+.like {
+    background-image: url("grano.svg");
+    background-size: cover;
+    height: 44px;
+    width: 44px;
+    background-color:transparent;
+    float: right;
+}
+
+.liked {
+    background-image: url("granoTostado.svg");
+}
+
+
+.cafeCounter {
+    display: flex;
+}
+
+.edited {
+    font-style: italic;
+    font-size: 0.8rem;
+    
+}
+
+.timeAgo {
+    float: right;
+}
+
+.likecount {
+    margin-top: 13px;
+    margin-left: 13px;
+    float: right;
+}
+
+#postingpage {
+    display: flex;
+}
+
+.yellTextarea {
+    flex: 4;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-body {
+    margin-bottom: -8px;
+    padding: 11px;
+}
+
+.userinfo {
+    margin-right: 15px;
+}
+
+#mesa {
+    height: 60px;
+}
+
+.badge {
+    float:right;
+}
+
+.editing {
+    display: flex;
+}
+
+.follow:hover {
+    background-color: green;
+}
+
+.unfollow:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+#usernameNav {
+    font-weight: bold;
+}
+

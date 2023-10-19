@@ -1,0 +1,62 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+
+    <div class="card profilepage">
+        <div class="card-body">
+            <h5 id="userprofile"></h5>
+            Followers: <span class="userinfo" id="followersCount"></span>
+            Following: <span class="userinfo" id="followingCount"></span>
+            Posts: <span class="userinfo" id="postsCount"></span>        
+            <button id="follow" class="btn follow"></button>
+            <img src="static/network/mesa.png" id="mesa">
+        </div>
+    </div>   
+    
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item page-link pagination-button prevPage">Previous</li>
+            <li class="page-item page-link">Page <span class="totalpages">1 of 40</span></li>
+            <li class="page-item page-link pagination-button nextPage">Next</li>
+        </ul>
+    </nav>
+
+     
+
+
+    <div>
+        <div id="indexpage">
+            <div id="postingpage">
+                <div class="yell-box">
+                    <img src="static/network/escribir.svg" style="height: 70px;">
+                </div> 
+                <form class="yellTextarea"> 
+                    {% csrf_token %}               
+                    <textarea id="sent-text" class="form-control" rows="2"></textarea>
+                </form>
+                <button class="btn" id="post-yell">Yell!</button>
+            </div>
+
+            <h2>Pedís un café y escuchas:</h2>        
+            
+        </div>
+        <h2 id="followingpage">Te sentás en tu mesa y escuchás: </h2>
+        <div id="posts"></div>
+    </div>
+
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item page-link pagination-button prevPage">Previous</li>
+            <li class="page-item page-link">Page <span class="totalpages">1 of 40</span></li>
+            <li class="page-item page-link pagination-button nextPage">Next</li>
+        </ul>
+    </nav>
+
+
+    <script src="{% static 'network/index.js' %}"></script>
+    <script src="{% static 'network/posts.js' %}"></script>
+
+{% endblock %}
